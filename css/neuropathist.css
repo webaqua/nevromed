@@ -1,0 +1,580 @@
+@font-face {
+    font-family: 'Open-Sans'; /* Имя шрифта */
+    src: url('fonts/open-sans/OpenSans.ttf'); /* Путь к файлу со шрифтом */
+   }
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    font-family: 'Open-Sans';
+    font-size: 14px;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 30vw;
+}
+
+.clr{
+	clear: both;
+}
+
+ul{
+	list-style: none !important;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+.indent{
+    -webkit-margin-before: 2em;
+    -webkit-margin-after: 2em;
+}
+
+#number, #marker{
+	line-height: 30px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+#number li{
+	display: list-item;
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+#marker li{
+	display: list-item;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+/* To Top*/
+
+a.btn{
+    background: url(../img/totop.png) no-repeat;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 5%;
+    height: 10%;
+    cursor: pointer;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-family: Arial;
+    color: #ffffff;
+    /* font-size: 5px; */
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    z-index: 10;
+    opacity: .8;
+}
+
+a.btn:hover{
+  background: url(../img/subtotop.png);
+  text-decoration: none;
+  opacity: .9;
+}
+
+header{
+	/*height: 4em;*/
+}
+
+.logo{
+    margin: 10px 0;
+}
+
+.logo img{
+    border-radius: 20px;
+}
+
+.header-content{
+	margin: 10px;
+}
+
+.top-menu ul{
+	text-align: right;
+}
+
+.top-menu li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.top-menu a {
+	padding: 10px 15px;
+	font-weight: 600;
+}
+
+/*.active{
+    border-radius: 5px;
+    background: #709DCA;
+    color: #fff;	
+}*/
+
+.middle{
+    margin-left: auto;
+    /*max-width: 1600px;*/
+    margin-right: 0;
+}
+
+.slideback, .aboutback{
+    opacity: .05;
+    position: absolute;
+    z-index: -3;
+    background-color: #709DCA;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutback{
+    background-color: #FEC057;
+    opacity: .05;
+}
+
+.middle{
+    position: relative;    
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    /*background-color: #709DCA;*/
+}
+
+
+.imagewrap, .aboutimagewrap{
+    background: url(../img/slideimage/1.jpg) no-repeat 100%;
+    background-size: contain;
+    display: block;
+    height: 30em;
+    padding: 4em;
+}
+
+.aboutimagewrap{
+    background: url(../img/slideimage/3.png) no-repeat 100%;
+    margin: 4em;
+    background-size: contain;
+}
+
+.slidecontent, .aboutcontent{
+    display: table-cell;
+    /*width: 46.66667%;*/
+    padding: 4em 2em 4em 2em;
+}
+
+.slidecontent h1, .aboutcontent h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 3vmin;
+}
+
+.slidecontent p, .aboutcontent p{
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em;
+}
+
+footer{
+    width: 100%;
+    background: #709CC9;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Pages */
+
+.first, .diseases-first{
+    background: url('../img/list/acupuncture.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.second, .diseases-second{
+    background: url('../img/list/vacuum.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.third, .diseases-third{
+    background: url('../img/list/manual.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fourth, .diseases-fourth{
+    background: url('../img/list/lfc.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.fifth, .diseases-fifth{
+    background: url('../img/list/massage.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sixth, .diseases-sixth{
+    background: url('../img/list/massage.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.seventh, .diseases-seventh{
+    background: url('../img/list/stone.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.eighth, .diseases-eighth{
+    background: url('../img/list/blokada.png') no-repeat !important;
+    padding: 0 2em 4em 4em !important;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em !important;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.diseases-first{
+    background: url('../img/list/hernia.png') no-repeat !important;
+}
+
+.diseases-second{
+    background: url('../img/list/protrusion.png') no-repeat !important;
+}
+
+.diseases-third{
+    background: url('../img/list/scoliosis.png') no-repeat !important;
+}
+
+.diseases-fourth{
+    background: url('../img/list/lfc.png') no-repeat !important;
+}
+
+.diseases-fifth{
+    background: url('../img/list/nerve.png') no-repeat !important;
+}
+
+.diseases-sixth{
+    background: url('../img/list/manual.png') no-repeat !important;
+}
+
+.diseases-seventh{
+    background: url('../img/list/headache.png') no-repeat !important;
+}
+
+.diseases-eighth{
+    background: url('../img/list/brain.png') no-repeat !important;
+}
+
+#service h2, #how-work h2, #contact h2, #diseases h2{
+    text-align: center;
+    padding: 20px 0;
+}
+
+#service b,  #contact b, #diseases b{
+    line-height: 30px;
+    text-align: justify;
+    font-size: 2.2vmin;
+    margin: 10px 0;
+}
+
+#contact p{
+	line-height: 30px;
+	font-size: 2vmin;
+}
+
+#about .title{
+    position: relative;
+    height: 36vw;
+    background: #FEC057;
+}
+
+.list{
+    /*width: 100%;*/
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content-title{
+    position: absolute;
+    left: 15%;
+    top: 27%;
+    right: 15%;
+    font-size: 12px;
+}
+
+#butabout{
+    text-decoration: none; 
+    text-align: center; 
+    padding: 11px 30px;
+    border: solid 1px #E7AD48; 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; 
+    border-radius: 4px;
+    font-weight: 600; 
+    color: #fff; 
+    background-color: #FEC057;     
+}
+
+#how-work{
+    text-align: center;
+}
+
+#how-work h2{
+    margin: 25px 0 0 0;
+}
+
+#button{
+    text-decoration: none; 
+    text-align: center; 
+    padding: 11px 15px;
+    border: solid 1px #E7AD48; 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; 
+    border-radius: 4px;
+    font-weight: 600; 
+    color: #fff; 
+    background-color: #FEC057;    
+}
+
+.step p{
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+.step b{
+    text-transform: uppercase;
+}
+
+.step a{
+    cursor: pointer;
+    color: #3679bb;
+}
+
+.soc-icon, .phone, .bot-menu{
+    text-align: center;
+}
+
+.phone p{
+    text-align: center !important;
+    margin: 0 !important;
+}
+
+.phone span{
+    font-size: 1em;
+}
+
+.bot-menu{
+    -webkit-margin-before: 4em !important;
+}
+
+.bot-menu li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.map{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Pages */
+#manual p, #reflexology p, #protrusion p, #intervertebral p, #osteochondrosis p, #recommendation p{
+    line-height: 2;
+    text-align: justify;
+    font-size: 1em;
+}
+
+#manual h2, #reflexology h2, #protrusion h2, #intervertebral h2, #osteochondrosis h2, #recommendation h2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#reflexology ul, #intervertebral ul{
+    line-height: 30px;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+#reflexology li, #intervertebral li{
+    text-indent: 2em;
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+    display:block;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.mobile-menu li a:hover {
+    background: #709DCA;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+    text-decoration: none;
+    color: #fff;
+    background: #709CCA;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+   font-weight: 600;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media screen and (max-width : 1200px){
+    .mobile-menu .lines {
+        border-bottom: 15px double #f8f8f8; 
+        border-top: 5px solid #f8f8f8; 
+        content:"";
+        height: 5px; 
+        width:20px;
+        padding-right:15px;
+        float: right;
+    }
+    /*Make dropdown links appear inline*/
+    .mobile-menu ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    .mobile-menu li {
+        margin-bottom: 1px;
+    }
+
+    .mobile-menu li a{
+        margin-left:-10px;
+        padding: 10px 5px;
+    }
+
+    /*Make all menu links full width*/
+    .mobile-menu ul li, .mobile-menu li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .mobile-menu .show-menu {
+        display:block;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .top-menu li{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #service b, #contact b, #diseases b{
+        font-size: 3.2vmin;
+    }
+
+    #about p{
+        line-height: 20px !important;
+        font-size: 0.8em !important;
+    }
+
+    #contact p{
+        line-height: 30px;
+        font-size: 2.2vmin;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .logo{
+        text-align: center;
+    }
+    .slidecontent, .aboutcontent{
+        padding: 0 2em 4em 2em;
+    }
+
+    .mobile-menu input[type=checkbox]:checked ~ #menu {
+        display: block;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #service b, #contact b, #diseases b{
+        font-size: 5vmin;
+    }
+}
